@@ -52,7 +52,8 @@ class SubwayStation(MetroStation):
         print(self.station_name)
         print(self.location)
         print(self.lines)
-        print(self.is_open)
+        if self.is_open:
+            print('open')
 
 
 # 1.2 TODO: Using your `SubwayStation` class, instantiate a subway station with the info below.
@@ -92,7 +93,10 @@ class BusStation(MetroStation):
         print(self.routes)
         print(self.station_name)
         print(self.location)
-        print(self.is_open)
+        if self.is_open:
+            print('open')
+        else:
+            print('closed')
 
 
 # 3.0 TODO: Using your `BusStation` class:
